@@ -18,7 +18,6 @@ describe "Pokemon" do
       expect(pokemon).to respond_to(:db)
     end
   end
-  
  def initialize (id:, name:, type:, hp: nil, db:)
     @id = id
     @name = name
@@ -27,7 +26,6 @@ describe "Pokemon" do
     @db = db
     @@all << self
   end
-  
   describe ".save" do
     it 'saves an instance of a pokemon with the correct id' do
       Pokemon.save("Pikachu", "electric", @db)
